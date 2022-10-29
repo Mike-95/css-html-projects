@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <!-- Create Form -->
+    <form id="from">
+      <!-- Details -->
+      <div class="form-control">
+        <label for="query" id="label-role">Type of Query</label>
+
+        <!-- Dropdown options -->
+        <select name="query" id="query">
+          <option value="sel" selected>Select</option>
+          <option value="ord">Order related Issues</option>
+          <option value="site">Site related Issues</option>
+          <option value="fed">Complaint related Issues</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label for="name" id="label-name">Name</label>
+        <!-- Input Type Text -->
+        <input type="text" placeholder="Enter your Name" id="name" />
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="label-email">Email</label>
+
+        <!-- Input Type Email-->
+        <input type="email" placeholder="Enter your Email" id="email" />
+      </div>
+
+      <div class="form-control">
+        <label for="phone" id="label-phone">Phone Number</label>
+
+        <!-- Input Type Phone-->
+        <input type="number" placeholder="Enter your Phone no" id="phone" />
+      </div>
+
+      <div class="form-control">
+        <label for="member" id="label-member"
+          >Are you a member of OnlineFoodShop:</label
+        >
+
+        <label for="yes"> 
+            <input type="radio" id="yes" name="yes">Yes</input></label>
+
+            <label for="no"> 
+                <input type="radio" id="no" name="no">No</input></label>
+      </div>
+
+      <div class="form-control">
+        <label for="comment">Ellaborate your query</label>
+
+        <!-- multi-line text input control -->
+        <textarea id="comment" name="comment">
+        </textarea>
+      </div>
+
+      <div class="form-control">
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset" value="reset">Reset</button>
+      </div>
+
+    </form>
+  </body>
+</html>
